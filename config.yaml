@@ -1,0 +1,40 @@
+paths:
+  rtm_root: data/raw/RTM
+  sroie_root: data/raw/SROIE2019
+  output_root: data/processed
+  rgb_root: data/processed/rgb
+  ela_root: data/processed/ela
+  srm_root: data/processed/srm
+  fft_root: data/processed/fft
+  rgb_train_root: data/processed/rgb/train
+  ela_train_root: data/processed/ela/train
+  srm_train_root: data/processed/srm/train
+  fft_train_root: data/processed/fft/train
+  rgb_test_root: data/processed/rgb/test
+  ela_test_root: data/processed/ela/test
+  srm_test_root: data/processed/srm/test
+  fft_test_root: data/processed/fft/test
+  rgb_real: data/processed/rgb/real
+  rgb_edited: data/processed/rgb/edited
+  rgb_ai_generated: data/processed/rgb/ai_generated
+  genai_script: src/genAI_forge_class.py
+  genai_debug_dir: data/processed/rgb/debug_ai_forge
+
+checkpoints:
+  stage1: checkpoints/stage1_fdd.pt
+  stage2: checkpoints/stage2_fdd.pt
+
+training:
+  device: cpu
+  image_size: 224
+  batch_size: 16
+  num_workers: 4
+  lr: 0.0001
+  weight_decay: 0.01
+  stage1_epochs: 5
+  stage2_epochs: 5
+
+inference:
+  device: cpu
+  stage1_threshold: 0.80
+  inconclusive_margin: 0.15

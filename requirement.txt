@@ -1,0 +1,15 @@
+torch
+torchvision
+timm
+opencv-python
+numpy
+pillow
+pyyaml
+scikit-learn
+gradio
+easyocr
+diffusers
+transformers
+accelerate
+safetensors
+datasets
