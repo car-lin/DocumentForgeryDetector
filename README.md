@@ -92,8 +92,8 @@ pip install -r requirements.txt
 - **Configuration & Utilities**: PyYAML  
 
 - **Datasets**:  
-    1. **RTM Dataset** – Real and manually edited document images  
-    2. **SROIE Dataset** – Real scanned receipts/documents  
+    1. **RTM Dataset** – https://drive.google.com/file/d/11AHZ8ih_kDCFilGceevppcGkKR4vDJD2/view  
+    2. **SROIE Dataset** – https://www.kaggle.com/datasets/urbikn/sroie-datasetv2
     3. **Custom GenAI Dataset** – AI-generated document forgeries created using a diffusion-based inpainting pipeline (stable diffusion)
 
 ---
